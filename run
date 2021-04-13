@@ -1,0 +1,12 @@
+#!/bin/zsh  
+
+mydir=$(pwd)
+
+if [ -d $mydir ]                    # если файл сущетсвует и он является директорией
+then
+echo "The $mydir directory exists"  # выводим сообщение
+cd $mydir                          # переходим в него 
+ls                                  # отображаем содержимое
+else                                # ИНАЧЕ
+echo "The $mydir directory does not exist"
+fi
